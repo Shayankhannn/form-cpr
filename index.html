@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+.form-info{
+    /* display: flex; */
+}
+.form-info label{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.form-info input{
+    width: 400px;
+    height: 50px;
+    border: 2px solid rgb(179, 179, 182);
+    border-radius: 10px;
+    padding: 10px;
+}
+.form-message textarea{
+    width: 400px;
+    height: 120px;
+    border: 2px solid rgb(179, 179, 182);
+    border-radius: 10px;
+    padding: 10px;
+}
+.form-info-2 label{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.form-info-2 input{
+    width: 400px;
+    height: 50px;
+    border: 2px solid rgb(179, 179, 182);
+    border-radius: 10px;
+    padding: 10px;
+}
+.form-info-title select{
+    width: 400px;
+    height: 50px;
+    border: 2px solid rgb(179, 179, 182);
+    border-radius: 10px;
+    padding: 10px 0;
+}
+.form-checkbox{
+    margin-top: 70px;
+}
+.form-check{
+    padding: 30px;
+}
+.form-check h4{
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.form-check input{
+  width: 100px;
+  height: 20px;
+    border: 2px solid rgb(179, 179, 182);
+   
+    padding: 10px;
+    gap: 30px;
+}
+.form-check label{
+   
+  font-size: 18px;
+  font-weight: 500;
+    border-radius: 10px;
+    padding: 10px;
+ 
+}
+
+.form-other{
+    margin-top: 70px;
+}
+.form-cpr{
+    margin-bottom: 50px;
+}
+
+.form-btn{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.form-btn a{
+    background-color: #EC2027;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+
+}
+
+    </style>
+</head>
+<body>
+    <section class="form-cpr">
+<div class="form-cpr-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-info">
+                   
+                    <div class="form-info-title">
+                        <label for="title">Title</label>
+                        <br>
+                        <select id="title">
+                            <option value="empty"></option>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Miss">Miss</option>
+                          
+                          </select>
+                    </div>
+                    <div class="form-info-name">
+                        <label for="name">Name*</label>
+                        <br>
+                        <input type="text" required>
+                        
+                    </div>
+                    <div class="form-info-l-name">
+                        <label for="l-name">Last Name*</label>
+                        <br>
+                        <input type="text" required>
+                       
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-info-2">
+                    <div class="form-info-group-name">
+                        <label for="Organization/GroupName">Organization/Group Name</label>
+                        <br>
+                        <input type="text" required>
+                       
+                    </div>
+                    <div class="form-info-email">
+                        <label for="email">Email Address *</label>
+                        <br>
+                        <input type="email" required>
+                       
+                    </div>
+                    <div class="form-info-num">
+                        <label for="email">Phone Number</label>
+                        <br>
+                        <input type="number" required>
+                       
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="form-checkbox">
+            <h3>*Which class do you need? Check all that apply.</h3>
+<div class="row">
+
+    
+<div class="col-md-6">
+    <div class="form-check">
+        <h4>CPR for Healthcare Professionals</h4>
+        <input type="checkbox" id="#" name="vehicle1" value="Bike">
+        <label for="vehicle1">BLS For Healthcare Providers</label><br>
+        <input type="checkbox" id="#" name="vehicle2" value="Car">
+        <label for="vehicle2"> ACLS Advanced Cardiac Life Support</label><br>
+        <input type="checkbox" id="#" name="vehicle3" value="Boat">
+        <label for="vehicle3"> PALS Pediatric Advanced Life Support</label><br>
+        <input type="checkbox" id="#" name="vehicle3" value="Boat">
+        <label for="vehicle3"> CPR Instructor Courses</label><br>
+        <input type="checkbox" id="#" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Blended Learning Online + Skills</label><br>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="form-check">
+        <h4>CPR for Non Healthcare Professionals </h4>
+        <input type="checkbox" id="#" name="vehicle1" value="Bike">
+        <label for="vehicle1">CPR AED</label><br>
+        <input type="checkbox" id="#" name="vehicle2" value="Car">
+        <label for="vehicle2">First Aid CPR AED</label><br>
+        <input type="checkbox" id="#" name="vehicle3" value="Boat">
+        <label for="vehicle3"> First Aid CPR AED Bloodborne Pathogens</label><br>
+        <input type="checkbox" id="#" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Pediatric First Aid CPR AED</label><br>
+        <input type="checkbox" id="#" name="vehicle3" value="Boat">
+        <label for="vehicle3"> First Aid</label><br>
+        <input type="checkbox" id="#" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Bloodborne Pathogens</label><br>
+        <input type="checkbox" id="#" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Blended Learning Online + Skills</label><br>
+    </div>
+</div>
+
+
+
+
+</div>
+</div>
+
+
+<div class="form-other">
+    <h3>Other</h3>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-info">
+               
+                <div class="form-info-title">
+                    <label for="other1">What else would you like on-site training for?</label>
+                    <br>
+                    <input type="text" required>
+                </div>
+                <div class="form-info-title">
+                    <label for="name">Number of Students? *</label>
+                    <br>
+                    <select id="title">
+                        <option value="empty"></option>
+                        <option value="5-10">5-10 Students</option>
+                        <option value="11-20">11-20 Students</option>
+                        <option value="21-30">21-30 Students</option>
+                        <option value="31+">31+ Students</option>
+                      
+                      </select>
+                    
+                </div>
+                <div class="form-info-title">
+                    <label for="#">How Did You Hear About Us? *</label>
+                    <br>
+                    <select id="title">
+                        <option value="empty"></option>
+                        <option value="Google">Google</option>
+                        <option value="Bing">Bing</option>
+                        <option value="Yahoo">Yahoo</option>
+                        <option value="AHA">AHA</option>
+                        <option value="AHA">I am a past client</option>
+                        <option value="AHA">Friend refered Me</option>
+                        <option value="AHA">BBB</option>
+                        <option value="AHA">Facebook</option>
+                        <option value="AHA">LinkedIn</option>
+                        <option value="AHA">other</option>
+                      
+                      </select>
+                   
+                </div>
+                
+            </div>
+        </div>
+       
+        <div class="col-md-6">
+           
+               
+           
+            <div class="form-info">
+                <h4>Date Requested</h4> 
+               
+                <div class="form-info-title">
+                    <label for="other1">1st Choice</label>
+                    <br>
+                    <input type="date" required>
+                </div>
+                <div class="form-info-title">
+                    <label for="name">2nd Choice
+                    </label>
+                    <br>
+                    <input type="date" required>
+                    
+                </div>
+                <div class="form-info-l-name">
+                    <label for="l-name">3rd Choice</label>
+                    <br>
+                    <input type="date" required>
+                   
+                </div>
+                
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>
+
+<div class="form-address">
+    <h3>Training Address
+    </h3>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-info">
+               
+                <div class="form-info-title">
+                    <label for="title">Title</label>
+                    <br>
+                    <select id="title">
+                        <option value="empty"></option>
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Miss">Miss</option>
+                      
+                      </select>
+                </div>
+                <div class="form-info-name">
+                    <label for="name">Name*</label>
+                    <br>
+                    <input type="text" required>
+                    
+                </div>
+                <div class="form-info-l-name">
+                    <label for="l-name">Last Name*</label>
+                    <br>
+                    <input type="text" required>
+                   
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-info-2">
+                <div class="form-info-group-name">
+                    <label for="Organization/GroupName">Street Address: *</label>
+                    <br>
+                    <input type="text" required>
+                   
+                </div>
+                <div class="form-info-email">
+                    <label for="email">Address Line 2</label>
+                    <br>
+                    <input type="text" >
+                   
+                </div>
+                <div class="form-info-num">
+                    <label for="city">City *</label>
+                    <br>
+                    <input type="text" required>
+                   
+                </div>
+                <div class="form-info-num">
+                    <label for="city">State *</label>
+                    <br>
+                    <input type="text" required>
+                   
+                </div>
+                
+                <div class="form-info-num">
+                    <label for="city">Zip *</label>
+                    <br>
+                    <input type="text" required>
+                   
+                </div>
+                
+                <div class="form-message">
+                    <label for="city">Message</label>
+                    <br>
+                    <textarea  name="comment" form="usrform">
+                    </textarea>
+                   
+                </div>
+                
+            </div>
+        </div>
+        <div class="form-btn">
+            <a href="#">Submit</a>
+        </div>
+    </div>
+   
+</div>
+
+
+
+    </div>
+
+
+
+</div>
+    </section>
+</body>
+</html>
